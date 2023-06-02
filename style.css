@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&family=Merriweather&family=Montserrat&family=Poppins:wght@400;500&family=Roboto:wght@400;700&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #dc895d;
+    --accent-color: #e87d48;
+    --accent-color-dark: #7d3603;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+hr {
+    margin: 30px auto 40px;
+    border-top: 1px solid #000000;
+    width: 50%;
+    border-width: 2px;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/*utility classes*/
+
+.small-bold-text {
+    font-size: 0.8rem;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-links {
+    color: var(--primary-text-color);
+    transition: 0.3s ease-out;
+}
+
+.hover-links:hover {
+    color: var(--accent-color);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: white !important;
+    padding: 7px 12px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.3s ease-out;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--primary-text-color) !important;
+    padding: 7px 12px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.3s ease-out;
+}
+
+.secondary-button:hover {
+    border: 0.5px solid var(--secondary-text-color);
+    color: var(--accent-color) !important;
+}
+
+
+
+/*top banner*/
+.top-banner {
+    background-color: rgb(0, 0, 0);
+}
+
+.banner-text {
+    color: rgba(255, 255, 255, 0.877);
+    padding: 5px 30px;
+    text-align: center;
+}
+
+.main-nav {
+    justify-content: space-between;
+
+}
+
+
+
+
+.nav-links {
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/*header section*/
+
+
+
+
+.header-section {
+    background-image: linear-gradient(0.25turn, #ffffff, #fbece0, #ffffff);
+    max-width: 100%;
+    margin-top: 0px;
+    height: 300px;
+    justify-content: center;
+    gap: 50px
+}
+
+.header-left {
+    max-width: 25vw;
+}
+
+.header-left p {
+    color: rgba(0, 0, 0, 0.647);
+    font-size: 0.9rem;
+}
+
+.shop-button {
+    background-color: rgba(0, 0, 0, 0.685);
+    font-weight: 00;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255) !important;
+    padding: 5px 10px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.1s ease-out;
+    margin: 10px 0px;
+}
+
+.shop-button:hover {
+    background-color: var(--accent-color);
+}
+
+
+.header-right img {
+    width: 14vw;
+    border-radius: 50px;
+}
+
+.summer-collection-head {
+    color: rgb(223, 71, 96);
+}
+
+
+/*companies section*/
+
+.brands-text {
+    font-size: 0.9rem;
+}
+
+.brands-section {
+    text-align: center;
+    margin-top: 110px;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    margin: 30px auto;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+}
+
+
+.company-logo img {
+    width: 100px;
+}
+
+/* men's collection*/
+
+.mens-collection {
+    padding: 80px var(--padding-inline-section) 0;
+}
+
+.mens-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.men-product {
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+    padding-bottom: 8px;
+}
+
+.mens-area {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products {
+
+    flex-direction: column;
+    max-width: 30%;
+    margin: 0px 50px 50px;
+}
+
+.type1 {
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.631);
+    font-size: 0.7rem;
+}
+
+.price-tag {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+.off-percent {
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.og-price {
+    text-decoration: line-through;
+    margin-left: 3px;
+    font-size: 12px;
+    font-weight: 400;
+}

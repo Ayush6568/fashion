@@ -1,0 +1,138 @@
+@media screen and (max-width: 992px) {
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-color: rgb(248, 238, 230);
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .main-nav {
+        overflow: initial;
+        position: relative;
+    }
+    .nav-links ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 811px) {
+
+    .header-section {
+        flex-wrap: wrap;
+        height: 30vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.88rem;
+    }
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: var(--secondary-text-color);
+        line-height: 1rem;
+    }
+
+    .shop-button {
+        font-size: 0.6rem;
+        padding: 1.5px 3px;
+    }
+
+    .header-left p {
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .products {
+        max-width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 621px) {
+    .header-left {
+        max-width: 50vw;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    :root {
+        --padding-inline-section: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .header-section {
+        max-width: 100%;
+        height: 300px;
+    }
+    
+    .header-left {
+        max-width: 40vw;
+    }
+    
+    .header-left p {
+        font-size: 0.75rem;
+    }
+    
+    .shop-button {
+        background-color: rgba(0, 0, 0, 0.685);
+        font-weight: 00;
+        font-size: 0.7rem;
+        color: rgb(255, 255, 255) !important;
+        padding: 1px 5px;
+        box-shadow: 0 0 2px var(--secondary-text-color);
+        transition: 0.1s ease-out;
+        margin: 20px 0;
+    }
+    
+    .shop-button:hover {
+        background-color: var(--accent-color);
+    }
+    
+    
+    .header-right img {
+        width: 30vw;
+        border-radius: 50px;
+    }
+    
+
+    .brand-section {
+        margin-top: 90px;
+    }
+}

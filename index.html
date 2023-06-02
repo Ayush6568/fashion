@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+
+<body>
+
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">Free shipping. 30-day return or refund guarantee.</div>
+        </div>
+    </div>
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="logo.png" alt="Company logo">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="#" class="hover-links">Home</a></li>
+                    <li><a href="#" class="hover-links">Shop</a></li>
+                    <li><a href="#" class="hover-links">Blog</a></li>
+                    <li><a href="#" class="hover-links">Contact</a></li>
+                    <li><a href="#" class="hover-links secondary-button">Sign in</a></li>
+                    <li><a href="#" class="hover-links primary-button">Sign up</a></li>
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars" style="color: #e4872f;"></i>
+            </a>
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="header-section container  flex">
+            <div class="header-left ">
+                <div class="summer-collection-head">Summer Collection</div>
+                <h3>Fall - Summer Collections 2023</h3>
+                <p>Immerse yourself in a realm of timeless allure, Where elegance meets innovation, so pure.</p>
+                <a href="#" class="shop-button">Shop now</a>
+            </div>
+            <div class="header-right ">
+                <img src="assets/product6.jpeg" alt="model photo">
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section class="brands-section">
+        <div class="container">
+            <div class="brands-text ">We have curated a collection of the world's top brands, offering you the finest
+                clothing selections available.</div>
+            <div class="logos flex">
+                <img src="assets/wrangler.png" alt="" class="logo">
+                <img src="assets/authorised.png" alt="" class="logo">
+                <img src="assets/versace.png" alt="" class="logo">
+                <img src="assets/puma.png" alt="" class="logo">
+                <img src="assets/helly.png" alt="" class="logo">
+                <img src="assets/shape.png" alt="" class="logo">
+                <img src="assets/pierre.png" alt="" class="logo">
+                <img src="assets/benetton.png" alt="" class="logo">
+            </div>
+        </div>
+    </section>
+
+    <section class="mens-collection">
+        <div class="container">
+            <div class="mens-header">
+                <h2>Featured Products for men</h2>
+                <hr>
+            </div>
+            <div class="mens-area flex class=" price-tag"">
+                <div class="products flex">
+                    <img class="men-product" src="assets/product1.jpeg">
+                    <h4>LEVI'S</h4>
+                    <p class="type1">Men Solid Denim Shirt</p>
+                    <p class="price-tag">Rs. 2639 <span class="og-price">Rs. 3299</span> <span class="off-percent">(20%
+                            OFF)</span></p>
+                </div>
+                <div class="products flex">
+                    <img class="men-product" src="assets/product2.jpeg">
+                    <h4>Pepe Jeans</h4>
+                    <p class="type1">Slim Fit Low-Rise Jeans</p>
+                    <p class="price-tag">Rs. 1259 <span class="og-price">Rs. 2799</span> <span class="off-percent">(55%
+                            OFF)</span></p>
+                </div>
+                <div class="products flex">
+                    <img class="men-product" src="assets/product3.jpeg">
+                    <h4>Jack & Jones</h4>
+                    <p class="type1">Men Pullover Sweater</p>
+                    <p class="price-tag">Rs. 1999 <span class="og-price">Rs. 4999</span> <span class="off-percent">(60%
+                            OFF)</span></p>
+                </div>
+                <div class="products flex">
+                    <img class="men-product" src="assets/product4.jpeg">
+                    <h4>Benetton</h4>
+                    <p class="type1">Men Perforated Sneakers</p>
+                    <p class="price-tag">Rs. 2559 <span class="og-price">Rs. 3199</span> <span class="off-percent">(20%
+                            OFF)</span></p>
+                </div>
+                <div class="products flex">
+                    <img class="men-product" src="assets/product5.jpeg">
+                    <h4>Louis Philippe</h4>
+                    <p class="type1">Men Bomber Jacket</p>
+                    <p class="price-tag">Rs. 2499 <span class="og-price">Rs. 4999</span> <span class="off-percent">(50%
+                            OFF)</span></p>
+                </div>
+                <div class="products flex">
+                    <img class="men-product" src="assets/product6.jpeg">
+                    <h4>Van Heusen</h4>
+                    <p class="type1">Men Slim Fit Trousers</p>
+                    <p class="price-tag">Rs. 2669 <span class="og-price">Rs. 2999</span> <span class="off-percent">(11%
+                            OFF)</span></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="womens-collection"></section>
+
+
+    <div class="spacer" style="height: 100vh;"></div>
+    <footer></footer>
+    <div class="subfooter"></div>
+    
+    <script src="https://kit.fontawesome.com/02ebbd200f.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton=document.getElementById('nav-toggle');
+        const navLinks=document.getElementById('nav-links');
+        toggleButton.addEventListener('click',()=> {
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
